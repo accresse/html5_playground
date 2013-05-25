@@ -1,10 +1,27 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Layout Manager</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel='stylesheet' type="text/css" href='css/spectrum.css' />
+<script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
+<script type="text/javascript" src="js/canvas_editor.js"></script>
+<script type="text/javascript" src="js/spectrum.js"></script>
 </head>
 <body>
-
+	<div id="container">
+		<div id="left_panel">
+			<form>
+				<div>Background Color: <input id="canvas_color" type="text"/></div>
+				<div>Background Image: <input id="canvas_image" type="file"/></div>
+				<div>Text: <input id="canvas_text" type="text" size="50"/></div>
+			</form>
+		</div>
+		<div id="right_panel">
+			<canvas id="canvas" width="800" height="800" style="border:1px solid #000000;">
+			</canvas>
+		</div>
+	</div>
 </body>
 </html>
