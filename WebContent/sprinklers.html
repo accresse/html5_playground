@@ -3,28 +3,38 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Sprinklers</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/sprinkler.css">
 <script type="text/javascript" src="js/jquery-1.10.0.min.js"></script>
 <script type="text/javascript" src="js/sprinklers.js"></script>
 </head>
 <body>
 	<div id="container">
-		<div style="position: absolute;"><img id="house" src="images/house_map.jpg"/></div>
-		<div style="position: absolute;"><canvas id="canvas" width="628" height="800"></canvas></div>
-	</div>
-	<div style="position: fixed; top: 50%; left:0; background-color: #555555; color: #ff9933; padding: 5px; opacity: 0.5">
-		<div>01<input id="zone1" type="checkbox"/></div>
-		<div>02<input id="zone2" type="checkbox"/></div>
-		<div>03<input id="zone3" type="checkbox"/></div>
-		<div>04<input id="zone4" type="checkbox"/></div>
-		<div>05<input id="zone5" type="checkbox"/></div>
-		<div>06<input id="zone6" type="checkbox"/></div>
-		<div>07<input id="zone7" type="checkbox"/></div>
-		<div>08<input id="zone8" type="checkbox"/></div>
-		<div>09<input id="zone9" type="checkbox"/></div>
-		<div>10<input id="zone10" type="checkbox"/></div>
-		<div>11<input id="zone11" type="checkbox"/></div>
-		<div>12<input id="zone12" type="checkbox"/></div>
+		<div id="top_panel">
+			<div>
+				<span class="delim">Zones:</span>
+				01<input id="zone1" type="checkbox"/><span class="delim">|</span>
+				02<input id="zone2" type="checkbox"/><span class="delim">|</span>
+				03<input id="zone3" type="checkbox"/><span class="delim">|</span>
+				04<input id="zone4" type="checkbox"/><span class="delim">|</span>
+				05<input id="zone5" type="checkbox"/><span class="delim">|</span>
+				06<input id="zone6" type="checkbox"/><span class="delim">|</span>
+				07<input id="zone7" type="checkbox"/><span class="delim">|</span>
+				08<input id="zone8" type="checkbox"/><span class="delim">|</span>
+				09<input id="zone9" type="checkbox"/><span class="delim">|</span>
+				10<input id="zone10" type="checkbox"/><span class="delim">|</span>
+				11<input id="zone11" type="checkbox"/><span class="delim">|</span>
+				12<input id="zone12" type="checkbox"/>
+			</div>
+				<span class="delim">Map:</span>
+				Drawing<input id="map_drawing" name="map_type" type="radio" value="images/house_map.jpg" checked="checked"/><span class="delim">|</span>
+				Satellite<input id="map_satellite" name="map_type" type="radio" value="images/house_map_sat.jpg"/>
+			<div>
+			</div>
+		</div>
+		<div id="bottom_panel">
+			<div style="position: absolute;"><img id="house" src="images/house_map.jpg"/></div>
+			<div style="position: absolute;"><canvas id="canvas" width="628" height="800"></canvas></div>
+		</div>
 	</div>
 </body>
 </html>

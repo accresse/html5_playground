@@ -15,6 +15,12 @@ $(document).ready(function() {
 	$("#zone10").change(repaint);
 	$("#zone11").change(repaint);
 	$("#zone12").change(repaint);
+
+	$("input[type='radio']").change(function() {
+		var map_type_radio = $("input[name='map_type']:checked");
+		var map_file = map_type_radio.val();
+		$("#house").attr("src", map_file);
+	});
 });
 
 var repaint = function() {
